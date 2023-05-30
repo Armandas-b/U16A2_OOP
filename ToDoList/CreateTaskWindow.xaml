@@ -1,0 +1,27 @@
+﻿<Window x:Class="ToDoList.CreateTaskWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Create Task" Height="300" Width="300">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="1" Text="Create New Task" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Task Name:" Grid.Row="2" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtTaskName" Grid.Row="3" Margin="0,5"/>
+
+        <TextBlock Grid.Row="4" Text="Due Date:" VerticalAlignment="Center" Margin="0,10,0,0"/>
+        <DatePicker x:Name="dpDueDate" Grid.Row="5" Margin="0,5"/>
+
+        <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20"/>
+        <Button Content="Cancel" Click="Cancel_Click" Margin="59,79,141,-59" Grid.Row="7"/>
+        <Button Content="Create" Click="Create_Click" Margin="139,79,61,-59" Grid.Row="8"/>
+    </Grid>
+</Window>

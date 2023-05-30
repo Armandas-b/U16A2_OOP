@@ -1,0 +1,46 @@
+
+graph TD
+
+    A(START) --> B(Initialize an empty task list)
+    B --> C(Display the todo list)
+    C --> D{WHILE true}
+    D --> E(Prompt user for action)
+    E --> |Add Task| F(Prompt user for task details)
+    F --> G{IF task details are valid}
+    G --> H(Create a new task object)
+    H --> I(Add task to the todo list)
+    I --> J(Display success message)
+    J --> D
+    G --> |Invalid task details| K(Display error message)
+    K --> D
+    E --> |Modify Task| L(Prompt user for task index to modify)
+    L --> M{IF taskIndex is valid}
+    M --> N(Prompt user for modified task details)
+    N --> O(Update the task with modified details)
+    O --> P(Display success message)
+    P --> D
+    M --> |Invalid taskIndex| Q(Display error message)
+    Q --> D
+    E --> |Delete Task| R(Prompt user for task index to delete)
+    R --> S{IF taskIndex is valid}
+    S --> T(Remove task from the todo list)
+    T --> U(Display success message)
+    U --> D
+    S --> |Invalid taskIndex| V(Display error message)
+    V --> D
+    E --> |Mark Task as Complete| W(Prompt user for task index to mark as complete)
+    W --> X{IF taskIndex is valid}
+    X --> Y(Mark task as complete)
+    Y --> Z(Display success message)
+    Z --> D
+    W --> |Invalid taskIndex| AA(Display error message)
+    AA --> D
+    E --> |Toggle Display Mode| BB(Prompt user for display mode all/incomplete)
+    BB --> CC{IF display mode is valid}
+    CC --> DD(Set the display mode for the todo list)
+    DD --> EE(Display success message)
+    EE --> D
+    CC --> |Invalid display mode| FF(Display error message)
+    FF --> D
+    E --> |Exit| GG(Exit)
+    GG --> HH(END)
