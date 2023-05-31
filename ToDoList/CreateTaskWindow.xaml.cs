@@ -22,8 +22,9 @@ namespace ToDoList
         {
             string taskName = txtTaskName.Text;
             DateTime dueDate = dpDueDate.SelectedDate ?? DateTime.Now;
+            bool isCompleted = false;
 
-            mainWindow.AddTask(taskName, dueDate);
+            mainWindow.AddTask(taskName, dueDate, isCompleted );
 
             Close();
         }

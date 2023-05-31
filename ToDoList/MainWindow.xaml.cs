@@ -1,60 +1,81 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using MahApps.Metro.Controls;
+using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using System.Collections.ObjectModel;
+using System.Reflection;
 
 namespace ToDoList
 {
     public partial class MainWindow : MetroWindow
     {
+
+        public ObservableCollection<TaskModel> ListBoxTasks { get; } = new ObservableCollection<TaskModel>();
+
         public MainWindow()
         {
             InitializeComponent();
+
+            DataContext = this; // Set the DataContext to the current instance of MainWindow
+
             Populate();
+            Console.WriteLine($"Number of tasks: {ListBoxTasks.Count}");
+
+            Console.WriteLine("Press any key to exit...");
+            Console.Read();
+
         }
+
 
         private void Populate()
         {
-            AddTask("Task 1", DateTime.Now);
-            AddTask("Task 2", DateTime.Now);
-            AddTask("Task 3", DateTime.Now);
-            AddTask("Task 4", DateTime.Now);
+            AddTask("Task 1", DateTime.Now, true);
+            AddTask("Task 2", DateTime.Now, false);
+            AddTask("Task 3", DateTime.Now, false);
+            listBoxTasks.ItemsSource = ListBoxTasks;
+
         }
 
-        private void AddTask_Click(object sender, RoutedEventArgs e)
+        public void AddTask(string taskName, DateTime dueDate, bool isCompleted)
         {
-            var createTaskWindow = new CreateTaskWindow(this);
-            createTaskWindow.ShowDialog();
-        }
-
-        public void AddTask(string taskName, DateTime dueDate)
-        {
-            CheckBox checkBox = new CheckBox
-            {
-                Content = $"{taskName} (Due: {dueDate.ToString("yyyy-MM-dd")})"
-            };
-
-            ListBoxItem newTaskItem = new ListBoxItem
-            {
-                Content = checkBox
-            };
-
-            listBoxTasks.Items.Add(newTaskItem);
+            TaskModel task = new TaskModel(taskName, dueDate, null, isCompleted);
+            ListBoxTasks.Add(task);
         }
 
 
-        private void DeleteTask_Click(object sender, RoutedEventArgs e)
+
+
+        private void EditTask(TaskModel task)
         {
-            if (listBoxTasks.SelectedItem is ListBoxItem selectedTask)
+            EditTaskWindow editTaskWindow = new EditTaskWindow(this, task);
+            editTaskWindow.ShowDialog();
+
+            // Update the ListBoxTasks collection or perform any other necessary actions after editing the task
+        }
+
+        private void EditTask_Click(object sender, RoutedEventArgs e)
+        {
+            if (sender is Button editButton && editButton.DataContext is TaskModel selectedTask)
             {
-                if (selectedTask.Content is CheckBox checkBox && listBoxTasks.Items.Contains(selectedTask))
-                {
-                    listBoxTasks.Items.Remove(selectedTask);
-                }
+                EditTask(selectedTask);
             }
         }
 
-        private void ApplyFilter_Click(object sender, RoutedEventArgs e)
+
+
+
+        private void DeleteTask()
+        {
+            // Implementation of the DeleteTask method
+        }
+
+
+
+
+        private void filterComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (filterComboBox.SelectedItem is ComboBoxItem selectedFilter)
             {
@@ -106,21 +127,12 @@ namespace ToDoList
                         }
                         break;
                 }
-
             }
         }
 
-        private void EditTask_Click(object sender, RoutedEventArgs e)
-        {
-            if (listBoxTasks.SelectedItem is ListBoxItem selectedTask)
-            {
-                if (selectedTask.Content is CheckBox checkBox && listBoxTasks.Items.Contains(selectedTask))
-                {
-                    var editTaskWindow = new EditTaskWindow(this, selectedTask);
-                    editTaskWindow.ShowDialog();
-                }
-            }
-        }
+
+
+
     }
 }
 
