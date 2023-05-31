@@ -18,7 +18,7 @@
         <TextBox x:Name="txtTaskName" Grid.Row="3" Margin="0,5"/>
 
         <TextBlock Grid.Row="4" Text="Due Date:" VerticalAlignment="Center" Margin="0,10,0,0"/>
-        <DatePicker x:Name="dpDueDate" Grid.Row="5" Margin="0,5"/>
+        <DatePicker x:Name="dpDueDate" Grid.Row="5" Margin="0,5" Focusable="False"/>
 
         <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20"/>
         <Button Content="Cancel" Click="Cancel_Click" Margin="59,79,141,-59" Grid.Row="7"/>

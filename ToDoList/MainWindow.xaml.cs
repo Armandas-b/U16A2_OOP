@@ -45,7 +45,11 @@ namespace ToDoList
             ListBoxTasks.Add(task);
         }
 
-
+        public void AddTask_Click(object sender, RoutedEventArgs e) {
+        
+            CreateTaskWindow createTaskWindow = new CreateTaskWindow(this);
+            createTaskWindow.ShowDialog();
+        }
 
 
         private void EditTask(TaskModel task)
@@ -56,81 +60,53 @@ namespace ToDoList
             // Update the ListBoxTasks collection or perform any other necessary actions after editing the task
         }
 
-        private void EditTask_Click(object sender, RoutedEventArgs e)
-        {
-            if (sender is Button editButton && editButton.DataContext is TaskModel selectedTask)
-            {
-                EditTask(selectedTask);
-            }
-        }
-
-
-
-
-        private void DeleteTask()
-        {
-            // Implementation of the DeleteTask method
-        }
-
-
-
 
         private void filterComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (filterComboBox.SelectedItem is ComboBoxItem selectedFilter)
             {
-                ListBoxItem listBoxItem = null; // Declare listBoxItem outside the switch statement
-
                 switch (selectedFilter.Content.ToString())
                 {
                     case "All Tasks":
                         // Show all tasks
-                        foreach (var item in listBoxTasks.Items)
+                        foreach (var task in ListBoxTasks)
                         {
-                            listBoxItem = item as ListBoxItem;
-                            if (listBoxItem != null)
-                            {
-                                listBoxItem.Visibility = Visibility.Visible;
-                            }
+                            task.IsVisible = true;
                         }
                         break;
 
                     case "Completed Tasks":
                         // Show only completed tasks
-                        foreach (var item in listBoxTasks.Items)
+                        foreach (var task in ListBoxTasks)
                         {
-                            listBoxItem = item as ListBoxItem;
-                            if (listBoxItem != null && listBoxItem.Content is CheckBox checkBox && checkBox.IsChecked == true)
+                            if (task.IsCompleted)
                             {
-                                listBoxItem.Visibility = Visibility.Visible;
+                                task.IsVisible = true;
                             }
-                            else if (listBoxItem != null)
+                            else
                             {
-                                listBoxItem.Visibility = Visibility.Collapsed;
+                                task.IsVisible = false;
                             }
                         }
                         break;
 
                     case "Uncompleted Tasks":
                         // Show only uncompleted tasks
-                        foreach (var item in listBoxTasks.Items)
+                        foreach (var task in ListBoxTasks)
                         {
-                            listBoxItem = item as ListBoxItem;
-                            if (listBoxItem != null && listBoxItem.Content is CheckBox checkBox && checkBox.IsChecked != true)
+                            if (!task.IsCompleted)
                             {
-                                listBoxItem.Visibility = Visibility.Visible;
+                                task.IsVisible = true;
                             }
-                            else if (listBoxItem != null)
+                            else
                             {
-                                listBoxItem.Visibility = Visibility.Collapsed;
+                                task.IsVisible = false;
                             }
                         }
                         break;
                 }
             }
         }
-
-
 
 
     }

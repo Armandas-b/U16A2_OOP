@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Input;
+using System.Windows;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using ToDoList;
@@ -11,6 +12,7 @@ public class TaskModel : ObservableObject
     public ICommand EditCommand { get; }
     public ICommand DeleteCommand { get; set; }
     private bool isCompleted;
+    private bool isVisible;
     public TaskModel AssociatedTask { get; } // Add AssociatedTask property
 
     public string TaskName
@@ -31,13 +33,21 @@ public class TaskModel : ObservableObject
         set { SetProperty(ref isCompleted, value); }
     }
 
+    public bool IsVisible
+    {
+        get { return isVisible; }
+        set { SetProperty(ref isVisible, value); }
+    }
+
     public TaskModel(string taskName, DateTime dueDate, TaskModel associatedTask, bool isCompleted)
     {
         TaskName = taskName;
         DueDate = dueDate;
         AssociatedTask = associatedTask; // Assign the associated task to the property
         EditCommand = new RelayCommand(EditTask); // Use EditTask method directly as the command
+        DeleteCommand = new RelayCommand(DeleteTask); 
         IsCompleted = isCompleted;
+        IsVisible = true;
     }
 
     public override string ToString()
@@ -53,6 +63,9 @@ public class TaskModel : ObservableObject
 
     private void DeleteTask()
     {
-        // Implementation of the DeleteTask method
+        if(Application.Current.MainWindow is MainWindow mainWindow)
+        {
+            mainWindow.ListBoxTasks.Remove(this);
+        }
     }
 }

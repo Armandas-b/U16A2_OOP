@@ -6,14 +6,14 @@
         Title="To-Do List" Height="400" Width="300">
 
     <mah:MetroWindow.Resources>
-
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
         <Style TargetType="mah:MetroWindow">
             <Setter Property="WindowStyle" Value="None"/>
             <Setter Property="AllowsTransparency" Value="True"/>
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="0"/>
         </Style>
-        
+
     </mah:MetroWindow.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -23,6 +23,11 @@
 
         <TextBlock Text="My To-Do List" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10,0,0"/>
         <ListBox Grid.Row="1" Margin="10" x:Name="listBoxTasks" ItemsSource="{Binding ListBoxTasks}">
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="Visibility" Value="{Binding IsVisible, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+                </Style>
+            </ListBox.ItemContainerStyle>
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid>
@@ -31,17 +36,18 @@
                             <ColumnDefinition />
                             <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
+                        <CheckBox mah:CheckBoxHelper.CheckGlyphForegroundChecked="LightGreen" Grid.Column="0"  IsChecked="{Binding IsCompleted}"/>
+                        <TextBlock Grid.Column="1" Text="{Binding TaskName}" Margin="5" VerticalAlignment="Center" />
+                        <TextBlock Grid.Column="2" Text="{Binding DueDate, StringFormat='yyyy-MM-dd'}" Margin="5" VerticalAlignment="Center"/>
 
-                        <TextBlock Grid.Column="0" Text="{Binding TaskName}" Margin="5" VerticalAlignment="Center" />
-                        <TextBlock Grid.Column="1" Text="{Binding DueDate, StringFormat='yyyy-MM-dd'}" Margin="5" VerticalAlignment="Center"/>
-
-                        <Button Grid.Column="2" Margin="5" Width="30" Height="30" Command="{Binding EditCommand}">
-                            <fa:FontAwesome Icon="Edit" Foreground="Black" Width="20" Height="20" />
+                        <Button Grid.Column="3" Margin="5" Width="30" Height="30" Command="{Binding EditCommand}">
+                            <fa:FontAwesome Icon="Edit" Foreground="White" FontSize="18"/>
                         </Button>
 
-                        <Button Grid.Column="3" Margin="5" Width="30" Height="30" Command="{Binding DeleteCommand}">
-                            <Image Source="delete_icon.png" Width="20" Height="20" />
+                        <Button Grid.Column="4" Margin="5" Width="30" Height="30" Command="{Binding DeleteCommand}">
+                            <fa:FontAwesome Icon="Trash" Foreground="White" FontSize="18"/>
                         </Button>
                     </Grid>
                 </DataTemplate>
@@ -51,8 +57,8 @@
 
 
         <StackPanel Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,20">
-          <!--  <Button Content="Add Task" Width="100" Margin="5" Click="AddTask_Click"/> -->
-          <!--  <Button Content="Delete Task" Width="100" Margin="5" Click="DeleteTask_Click"/> -->
+            <Button Content="Add Task" Width="100" Margin="5" Click="AddTask_Click"/>
+            <!--  <Button Content="Delete Task" Width="100" Margin="5" Click="DeleteTask_Click"/> -->
            <!-- <Button Content="Edit Task" Width="100" Margin="5" Click="EditTask_Click"/> -->
             <StackPanel Orientation="Horizontal" Margin="0,10">
                 <TextBlock Text="Filter:" VerticalAlignment="Center"/>
