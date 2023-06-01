@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Windows;
+using MahApps.Metro.Controls;
 
 namespace ToDoList
 {
-    public partial class CreateTaskWindow : Window
+    public partial class CreateTaskWindow : MetroWindow
     {
         private MainWindow mainWindow;
 
