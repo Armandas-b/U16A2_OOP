@@ -1,0 +1,12 @@
+D:\U16A2_OOP\ToDo_Pub\ToDoList.exe
+D:\U16A2_OOP\ToDo_Pub\ToDoList.dll
+D:\U16A2_OOP\ToDo_Pub\ToDoList.deps.json
+D:\U16A2_OOP\ToDo_Pub\ToDoList.runtimeconfig.json
+D:\U16A2_OOP\ToDo_Pub\ToDoList.dll.config
+D:\U16A2_OOP\ToDo_Pub\ToDoList.pdb
+D:\U16A2_OOP\ToDo_Pub\CommunityToolkit.Mvvm.dll
+D:\U16A2_OOP\ToDo_Pub\ControlzEx.dll
+D:\U16A2_OOP\ToDo_Pub\FontAwesome.WPF.dll
+D:\U16A2_OOP\ToDo_Pub\MahApps.Metro.dll
+D:\U16A2_OOP\ToDo_Pub\Microsoft.Xaml.Behaviors.dll
+D:\U16A2_OOP\ToDo_Pub\de\MahApps.Metro.resources.dll
