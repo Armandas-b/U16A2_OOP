@@ -88,3 +88,4 @@ D:\U16A2_OOP\ToDoList\obj\Debug\net6.0-windows\ToDoList.genruntimeconfig.cache
 D:\U16A2_OOP\ToDoList\obj\Debug\net6.0-windows\ref\ToDoList.dll
 D:\U16A2_OOP\ToDoList\bin\Debug\net6.0-windows\ToDoList.dll.config
 D:\U16A2_OOP\ToDoList\obj\Debug\net6.0-windows\ToDoList_Content.g.cs
+D:\U16A2_OOP\ToDoList\bin\Debug\net6.0-windows\System.Deployment.dll

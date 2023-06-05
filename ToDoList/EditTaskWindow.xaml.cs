@@ -28,6 +28,20 @@ namespace ToDoList
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
+
+            if (string.IsNullOrWhiteSpace(textBoxTitle.Text))
+            {
+                MessageBox.Show("Please enter a task title.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            // Validate the due date input
+            if (datePickerDueDate.SelectedDate.HasValue && datePickerDueDate.SelectedDate.Value < DateTime.Today)
+            {
+                MessageBox.Show("Please select a future due date.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
             // Retrieve the updated values from the controls
             string updatedTitle = textBoxTitle.Text;
             DateTime? updatedDueDate = datePickerDueDate.SelectedDate;

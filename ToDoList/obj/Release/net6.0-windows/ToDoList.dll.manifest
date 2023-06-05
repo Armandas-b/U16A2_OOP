@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="ToDoList.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="ToDoList.exe" version="1.0.0.4" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="ToDoLogo.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -108,22 +108,31 @@
       <dsig:DigestValue>ceAOK5yjCIEy/E1UogdssHEn/gKl+8EN+NYc3lXf2+8=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ToDoList.deps.json" size="3986">
+  <file name="System.Deployment.dll" size="554672">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>wi51+UQfcVXTZWv21tUIfnqFqS/RvkAR/tlE4lpAC5M=</dsig:DigestValue>
+      <dsig:DigestValue>cEJQFU3MM3fzgX7Q0eI4QnXX9Bgiw8tYYvzM7sHdtr8=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ToDoList.dll" size="202240">
+  <file name="ToDoList.deps.json" size="4677">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>RaOmr+/gBgUTqUMfiPM0R7Ovrwucu8T4KHp6GNBIWo0=</dsig:DigestValue>
+      <dsig:DigestValue>anrfpQBICe4yPMG+4mCHQhuA4aVL9Eo3FHa3fnnACuI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ToDoList.dll" size="203264">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9HIE57Helx4YfRfFw44s2QxfyzEfTDd53bOORjyOnpM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="ToDoList.dll.config" size="77">

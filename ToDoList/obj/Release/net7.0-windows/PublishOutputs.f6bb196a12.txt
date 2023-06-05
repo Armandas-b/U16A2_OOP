@@ -1,0 +1,13 @@
+D:\U16A2_OOP\ToDoList\bin\Release\net7.0-windows\app.publish\ToDoList.exe
+D:\U16A2_OOP\ToDoList\bin\Release\net7.0-windows\app.publish\ToDoList.dll
+D:\U16A2_OOP\ToDoList\bin\Release\net7.0-windows\app.publish\ToDoList.deps.json
+D:\U16A2_OOP\ToDoList\bin\Release\net7.0-windows\app.publish\ToDoList.runtimeconfig.json
+D:\U16A2_OOP\ToDoList\bin\Release\net7.0-windows\app.publish\ToDoList.dll.config
+D:\U16A2_OOP\ToDoList\bin\Release\net7.0-windows\app.publish\ToDoList.pdb
+D:\U16A2_OOP\ToDoList\bin\Release\net7.0-windows\app.publish\CommunityToolkit.Mvvm.dll
+D:\U16A2_OOP\ToDoList\bin\Release\net7.0-windows\app.publish\ControlzEx.dll
+D:\U16A2_OOP\ToDoList\bin\Release\net7.0-windows\app.publish\FontAwesome.WPF.dll
+D:\U16A2_OOP\ToDoList\bin\Release\net7.0-windows\app.publish\System.Deployment.dll
+D:\U16A2_OOP\ToDoList\bin\Release\net7.0-windows\app.publish\MahApps.Metro.dll
+D:\U16A2_OOP\ToDoList\bin\Release\net7.0-windows\app.publish\Microsoft.Xaml.Behaviors.dll
+D:\U16A2_OOP\ToDoList\bin\Release\net7.0-windows\app.publish\de\MahApps.Metro.resources.dll

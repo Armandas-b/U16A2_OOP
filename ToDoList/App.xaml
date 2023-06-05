@@ -12,6 +12,12 @@
                 <!-- Theme setting -->
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Themes/Dark.Blue.xaml" />
             </ResourceDictionary.MergedDictionaries>
+            <ControlTemplate x:Key="ValidationTemplate">
+                <DockPanel LastChildFill="True">
+                    <TextBlock DockPanel.Dock="Right" Foreground="Red" FontSize="12" Margin="5" Text="!" />
+                    <AdornedElementPlaceholder />
+                </DockPanel>
+            </ControlTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

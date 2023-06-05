@@ -7,6 +7,8 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.Collections.ObjectModel;
 using System.Reflection;
+using System.Windows.Automation;
+
 
 namespace ToDoList
 {
@@ -17,7 +19,12 @@ namespace ToDoList
 
         public MainWindow()
         {
-            InitializeComponent();
+                InitializeComponent();
+
+                string v =  Environment.GetEnvironmentVariable("ClickOnce_CurrentVersion");
+
+                this.Title = $"TO-DO LIST {v}";
+
 
             DataContext = this; // Set the DataContext to the current instance of MainWindow
 
@@ -110,5 +117,6 @@ namespace ToDoList
 
 
     }
+
 }
 

@@ -33,6 +33,7 @@ D:\U16A2_OOP\ToDoList\obj\Release\net6.0-windows\refint\ToDoList.dll
 D:\U16A2_OOP\ToDoList\obj\Release\net6.0-windows\ToDoList.pdb
 D:\U16A2_OOP\ToDoList\obj\Release\net6.0-windows\ToDoList.genruntimeconfig.cache
 D:\U16A2_OOP\ToDoList\obj\Release\net6.0-windows\ref\ToDoList.dll
+D:\U16A2_OOP\ToDoList\bin\Release\net6.0-windows\System.Deployment.dll
 D:\U16A2_OOP\ToDoList\bin\Release\net6.0-windows\ToDoList.dll.manifest
 D:\U16A2_OOP\ToDoList\bin\Release\net6.0-windows\ToDoList.application
 D:\U16A2_OOP\ToDoList\obj\Release\net6.0-windows\ToDoList.dll.manifest

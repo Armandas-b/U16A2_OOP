@@ -1,20 +1,20 @@
 ﻿ToDoList
-1.0.0.0
+
 
 winexe
 C#
 .cs
-d:\U16A2_OOP\ToDoList\obj\Debug\net6.0-windows\
+D:\U16A2_OOP\ToDoList\obj\Debug\net6.0-windows\
 ToDoList
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-d:\U16A2_OOP\ToDoList\App.xaml
+D:\U16A2_OOP\ToDoList\App.xaml
 3-129843354
 1663550980
-9926963442
-199-2068859225
+7201270651
+200-33077305
 CreateTaskWindow.xaml;EditTaskWindow.xaml;MainWindow.xaml;
 
-True
+False
 

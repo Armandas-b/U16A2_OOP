@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "oC2sxQbyydNicIjRXRY2y8Tg2og9oKkiyVrI75fa4TXDEVx77Bg1g9g0TE8zWJtv1jue9g28qEx18HKB7kIJow==",
+  "dgSpecHash": "I0ucHu2oZukKi70NRuoENBG3VKcyubYC6cs68RjJKmZqZ3fl3YMJBaHi/qNTrx+vVIJdhS4htzCJ5NA3WRFD4w==",
   "success": true,
   "projectFilePath": "D:\\U16A2_OOP\\ToDoList\\ToDoList.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bruni\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0\\communitytoolkit.mvvm.8.2.0.nupkg.sha512",
     "C:\\Users\\bruni\\.nuget\\packages\\controlzex\\4.4.0\\controlzex.4.4.0.nupkg.sha512",
     "C:\\Users\\bruni\\.nuget\\packages\\fontawesome.wpf\\4.7.0.9\\fontawesome.wpf.4.7.0.9.nupkg.sha512",
+    "C:\\Users\\bruni\\.nuget\\packages\\frameworkextract.system.deployment\\4.0.30319\\frameworkextract.system.deployment.4.0.30319.nupkg.sha512",
     "C:\\Users\\bruni\\.nuget\\packages\\mahapps.metro\\2.4.9\\mahapps.metro.2.4.9.nupkg.sha512",
     "C:\\Users\\bruni\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
     "C:\\Users\\bruni\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
@@ -16,10 +17,10 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'FontAwesome.WPF 4.7.0.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "message": "Package 'FontAwesome.WPF 4.7.0.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "FontAwesome.WPF",
       "targetGraphs": [
-        "net6.0-windows7.0"
+        "net7.0-windows7.0"
       ]
     }
   ]
