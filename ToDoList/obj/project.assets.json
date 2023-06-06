@@ -298,19 +298,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bruni\\.nuget\\packages\\": {}
+    "C:\\Users\\424556\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\U16A2_OOP\\ToDoList\\ToDoList.csproj",
+      "projectUniqueName": "D:\\L3Y2\\U16-OOP\\U16A2\\ToDoList\\ToDoList.csproj",
       "projectName": "ToDoList",
-      "projectPath": "D:\\U16A2_OOP\\ToDoList\\ToDoList.csproj",
-      "packagesPath": "C:\\Users\\bruni\\.nuget\\packages\\",
-      "outputPath": "D:\\U16A2_OOP\\ToDoList\\obj\\",
+      "projectPath": "D:\\L3Y2\\U16-OOP\\U16A2\\ToDoList\\ToDoList.csproj",
+      "packagesPath": "C:\\Users\\424556\\.nuget\\packages\\",
+      "outputPath": "D:\\L3Y2\\U16-OOP\\U16A2\\ToDoList\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\bruni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\424556\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "I0ucHu2oZukKi70NRuoENBG3VKcyubYC6cs68RjJKmZqZ3fl3YMJBaHi/qNTrx+vVIJdhS4htzCJ5NA3WRFD4w==",
+  "dgSpecHash": "J8tFhshKgKnmcGqszVf3FbIbTtIRfhrfNpvJ4DDVTnh+lKoDC4dMogjlHkObB4QI27aYGE9//hnOLKUn4qSH0w==",
   "success": true,
-  "projectFilePath": "D:\\U16A2_OOP\\ToDoList\\ToDoList.csproj",
+  "projectFilePath": "D:\\L3Y2\\U16-OOP\\U16A2\\ToDoList\\ToDoList.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\bruni\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0\\communitytoolkit.mvvm.8.2.0.nupkg.sha512",
-    "C:\\Users\\bruni\\.nuget\\packages\\controlzex\\4.4.0\\controlzex.4.4.0.nupkg.sha512",
-    "C:\\Users\\bruni\\.nuget\\packages\\fontawesome.wpf\\4.7.0.9\\fontawesome.wpf.4.7.0.9.nupkg.sha512",
-    "C:\\Users\\bruni\\.nuget\\packages\\frameworkextract.system.deployment\\4.0.30319\\frameworkextract.system.deployment.4.0.30319.nupkg.sha512",
-    "C:\\Users\\bruni\\.nuget\\packages\\mahapps.metro\\2.4.9\\mahapps.metro.2.4.9.nupkg.sha512",
-    "C:\\Users\\bruni\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
-    "C:\\Users\\bruni\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
+    "C:\\Users\\424556\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0\\communitytoolkit.mvvm.8.2.0.nupkg.sha512",
+    "C:\\Users\\424556\\.nuget\\packages\\controlzex\\4.4.0\\controlzex.4.4.0.nupkg.sha512",
+    "C:\\Users\\424556\\.nuget\\packages\\fontawesome.wpf\\4.7.0.9\\fontawesome.wpf.4.7.0.9.nupkg.sha512",
+    "C:\\Users\\424556\\.nuget\\packages\\frameworkextract.system.deployment\\4.0.30319\\frameworkextract.system.deployment.4.0.30319.nupkg.sha512",
+    "C:\\Users\\424556\\.nuget\\packages\\mahapps.metro\\2.4.9\\mahapps.metro.2.4.9.nupkg.sha512",
+    "C:\\Users\\424556\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
+    "C:\\Users\\424556\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
   ],
   "logs": [
     {

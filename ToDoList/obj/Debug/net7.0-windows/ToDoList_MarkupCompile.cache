@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\U16A2_OOP\ToDoList\obj\Debug\net7.0-windows\
+D:\L3Y2\U16-OOP\U16A2\ToDoList\obj\Debug\net7.0-windows\
 ToDoList
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-D:\U16A2_OOP\ToDoList\App.xaml
+D:\L3Y2\U16-OOP\U16A2\ToDoList\App.xaml
 3-129843354
 1663550980
 7201270651
-20484842775
+204-1449186860
 CreateTaskWindow.xaml;EditTaskWindow.xaml;MainWindow.xaml;
 
 False

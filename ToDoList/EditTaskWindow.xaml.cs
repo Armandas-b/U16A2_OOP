@@ -29,7 +29,7 @@ namespace ToDoList
         private void Save_Click(object sender, RoutedEventArgs e)
         {
 
-            if (string.IsNullOrWhiteSpace(textBoxTitle.Text))
+            if (string.IsNullOrWhiteSpace(textBoxTitle.Text) || textBoxTitle.Text.Length > 50)
             {
                 MessageBox.Show("Please enter a task title.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
