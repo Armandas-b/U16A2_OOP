@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "jI67uqVycllE4QO+SMFKZCMqHkvyw5Uz3wsjwCFJAECKk/Z22cCF+FpL8nSqNwY9FccgC5u8pTbUJXxkXkzCzg==",
+  "dgSpecHash": "Trtq24RIK8TNtXD/Xnwo2Sp60bTkbnNI/jPun/v+trBPs/AqleEqwQBQPSmUJ7VUxdgw2a1etT7AaO0qSi6MCw==",
   "success": true,
-  "projectFilePath": "D:\\L3Y2\\U16-OOP\\U16A2\\IndexSystem\\IndexSystem.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "T:\\L3Y2\\U16-OOP\\U16A2\\IndexSystem\\IndexSystem.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bruni\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

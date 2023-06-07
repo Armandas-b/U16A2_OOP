@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\L3Y2\\U16-OOP\\U16A2\\IndexSystem\\IndexSystem.csproj": {}
+    "T:\\L3Y2\\U16-OOP\\U16A2\\IndexSystem\\IndexSystem.csproj": {}
   },
   "projects": {
-    "D:\\L3Y2\\U16-OOP\\U16A2\\IndexSystem\\IndexSystem.csproj": {
+    "T:\\L3Y2\\U16-OOP\\U16A2\\IndexSystem\\IndexSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\L3Y2\\U16-OOP\\U16A2\\IndexSystem\\IndexSystem.csproj",
+        "projectUniqueName": "T:\\L3Y2\\U16-OOP\\U16A2\\IndexSystem\\IndexSystem.csproj",
         "projectName": "IndexSystem",
-        "projectPath": "D:\\L3Y2\\U16-OOP\\U16A2\\IndexSystem\\IndexSystem.csproj",
-        "packagesPath": "C:\\Users\\424556\\.nuget\\packages\\",
-        "outputPath": "D:\\L3Y2\\U16-OOP\\U16A2\\IndexSystem\\obj\\",
+        "projectPath": "T:\\L3Y2\\U16-OOP\\U16A2\\IndexSystem\\IndexSystem.csproj",
+        "packagesPath": "C:\\Users\\bruni\\.nuget\\packages\\",
+        "outputPath": "T:\\L3Y2\\U16-OOP\\U16A2\\IndexSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\424556\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bruni\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[30.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
