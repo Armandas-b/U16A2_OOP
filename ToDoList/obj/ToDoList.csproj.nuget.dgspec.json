@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\L3Y2\\U16-OOP\\U16A2\\ToDoList\\ToDoList.csproj": {}
+    "C:\\Users\\424556\\Source\\Repos\\U16A2_OOP\\ToDoList\\ToDoList.csproj": {}
   },
   "projects": {
-    "D:\\L3Y2\\U16-OOP\\U16A2\\ToDoList\\ToDoList.csproj": {
+    "C:\\Users\\424556\\Source\\Repos\\U16A2_OOP\\ToDoList\\ToDoList.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\L3Y2\\U16-OOP\\U16A2\\ToDoList\\ToDoList.csproj",
+        "projectUniqueName": "C:\\Users\\424556\\Source\\Repos\\U16A2_OOP\\ToDoList\\ToDoList.csproj",
         "projectName": "ToDoList",
-        "projectPath": "D:\\L3Y2\\U16-OOP\\U16A2\\ToDoList\\ToDoList.csproj",
+        "projectPath": "C:\\Users\\424556\\Source\\Repos\\U16A2_OOP\\ToDoList\\ToDoList.csproj",
         "packagesPath": "C:\\Users\\424556\\.nuget\\packages\\",
-        "outputPath": "D:\\L3Y2\\U16-OOP\\U16A2\\ToDoList\\obj\\",
+        "outputPath": "C:\\Users\\424556\\Source\\Repos\\U16A2_OOP\\ToDoList\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\424556\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -43,7 +43,7 @@ namespace IndexSystem
                     csvWriter.Context.RegisterClassMap<BookTwoMap>();
 
                     
-                    await csvWriter.NextRecordAsync();
+                    //await csvWriter.NextRecordAsync();
 
                     foreach (var record in csvRecords)
                     {

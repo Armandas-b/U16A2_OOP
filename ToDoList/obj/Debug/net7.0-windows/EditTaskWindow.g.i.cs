@@ -69,7 +69,7 @@ namespace ToDoList {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ToDoList;component/edittaskwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ToDoList;V1.0.0.0;component/edittaskwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\EditTaskWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
