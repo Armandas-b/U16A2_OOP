@@ -30,14 +30,21 @@ namespace ToDoList
 
             if (dpDueDate.SelectedDate.HasValue && dpDueDate.SelectedDate.Value < DateTime.Today)
             {
-                MessageBox.Show("Please select a future due date.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Please select a future or today as a due date.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtTaskDescription.Text))
+            {
+                MessageBox.Show("Please enter a valid task description", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
             string taskName = txtTaskName.Text;
+            string taskDescription = txtTaskDescription.Text;
             DateTime dueDate = dpDueDate.SelectedDate ?? DateTime.Now;
             bool isCompleted = false;
 
-            mainWindow.AddTask(taskName, dueDate, isCompleted );
+            mainWindow.AddTask(taskName, taskDescription, dueDate, isCompleted );
 
             Close();
         }

@@ -39,16 +39,16 @@ namespace ToDoList
 
         private void Populate()
         {
-            AddTask("Task 1", DateTime.Now, true);
-            AddTask("Task 2", DateTime.Now, false);
-            AddTask("Task 3", DateTime.Now, false);
+            AddTask("Task 1", "Blah blah blah",DateTime.Now, true);
+            AddTask("Task 2", "Blah blah blah", DateTime.Now, false);
+            AddTask("Task 3", "Blah blah blah", DateTime.Now, false);
             listBoxTasks.ItemsSource = ListBoxTasks;
 
         }
 
-        public void AddTask(string taskName, DateTime dueDate, bool isCompleted)
+        public void AddTask(string taskName, string taskDescription, DateTime dueDate, bool isCompleted)
         {
-            TaskModel task = new TaskModel(taskName, dueDate, null, isCompleted);
+            TaskModel task = new TaskModel(taskName,taskDescription ,dueDate, null, isCompleted);
             ListBoxTasks.Add(task);
         }
 

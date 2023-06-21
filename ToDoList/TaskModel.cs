@@ -4,10 +4,12 @@ using System.Windows;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using ToDoList;
+using System.Windows.Navigation;
 
 public class TaskModel : ObservableObject
 {
     private string taskName;
+    private string taskDescription;
     private DateTime dueDate;
     public ICommand EditCommand { get; }
     public ICommand DeleteCommand { get; set; }
@@ -21,6 +23,11 @@ public class TaskModel : ObservableObject
         set { SetProperty(ref taskName, value); }
     }
 
+    public string TaskDescription
+    {
+        get { return taskDescription; }
+        set { SetProperty(ref taskDescription, value); }
+    }
     public DateTime DueDate
     {
         get { return dueDate; }
@@ -39,9 +46,10 @@ public class TaskModel : ObservableObject
         set { SetProperty(ref isVisible, value); }
     }
 
-    public TaskModel(string taskName, DateTime dueDate, TaskModel associatedTask, bool isCompleted)
+    public TaskModel(string taskName, string taskDescription, DateTime dueDate, TaskModel associatedTask, bool isCompleted)
     {
         TaskName = taskName;
+        TaskDescription = taskDescription;
         DueDate = dueDate;
         AssociatedTask = associatedTask; // Assign the associated task to the property
         EditCommand = new RelayCommand(EditTask); // Use EditTask method directly as the command
@@ -52,7 +60,7 @@ public class TaskModel : ObservableObject
 
     public override string ToString()
     {
-        return $"{TaskName} (Due: {DueDate:yyyy-MM-dd})";
+        return $"{TaskName} {taskDescription} (Due: {DueDate:yyyy-MM-dd})";
     }
 
     private void EditTask()

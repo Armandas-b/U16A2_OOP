@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "26F24VDGQbgsaOEIUFpMyVW5fYhs+3ok1NrOLAbs2MLzqbGTHvimCYdDkYyaxJ/AsJbCvP5ebXD4NHApZio38A==",
+  "dgSpecHash": "3R1djFJTQvcPZ/s+0EXrvkTyHo6OV/Ay8loZpVlzOfIR27hr2qg+9zsxDFVCeGmF/jwNQmIGtx7hdvgUoI+Wzg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\424556\\Source\\Repos\\U16A2_OOP\\ToDoList\\ToDoList.csproj",
+  "projectFilePath": "D:\\U16A2_OOP-1\\ToDoList\\ToDoList.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\424556\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0\\communitytoolkit.mvvm.8.2.0.nupkg.sha512",
-    "C:\\Users\\424556\\.nuget\\packages\\controlzex\\4.4.0\\controlzex.4.4.0.nupkg.sha512",
-    "C:\\Users\\424556\\.nuget\\packages\\fontawesome.wpf\\4.7.0.9\\fontawesome.wpf.4.7.0.9.nupkg.sha512",
-    "C:\\Users\\424556\\.nuget\\packages\\frameworkextract.system.deployment\\4.0.30319\\frameworkextract.system.deployment.4.0.30319.nupkg.sha512",
-    "C:\\Users\\424556\\.nuget\\packages\\mahapps.metro\\2.4.9\\mahapps.metro.2.4.9.nupkg.sha512",
-    "C:\\Users\\424556\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
-    "C:\\Users\\424556\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
+    "C:\\Users\\bruni\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0\\communitytoolkit.mvvm.8.2.0.nupkg.sha512",
+    "C:\\Users\\bruni\\.nuget\\packages\\controlzex\\4.4.0\\controlzex.4.4.0.nupkg.sha512",
+    "C:\\Users\\bruni\\.nuget\\packages\\fontawesome.wpf\\4.7.0.9\\fontawesome.wpf.4.7.0.9.nupkg.sha512",
+    "C:\\Users\\bruni\\.nuget\\packages\\frameworkextract.system.deployment\\4.0.30319\\frameworkextract.system.deployment.4.0.30319.nupkg.sha512",
+    "C:\\Users\\bruni\\.nuget\\packages\\mahapps.metro\\2.4.9\\mahapps.metro.2.4.9.nupkg.sha512",
+    "C:\\Users\\bruni\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
+    "C:\\Users\\bruni\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
   ],
   "logs": [
     {

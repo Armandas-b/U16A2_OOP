@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:fa="http://schemas.fontawesome.io/icons/"
-        Title="To-Do List" Height="400" Width="300"
+        Title="To-Do List" SizeToContent="WidthAndHeight"
         Icon="ToDoLogo.ico">
 
 
@@ -20,14 +20,16 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="My To-Do List" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10,0,0"/>
-        <ListBox Grid.Row="1" Margin="10" x:Name="listBoxTasks" ItemsSource="{Binding ListBoxTasks}">
+        <TextBlock Grid.Row="0" Text="My To-Do List" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+        <ListBox Grid.Row="1" Margin="10" Height="Auto" x:Name="listBoxTasks" ItemsSource="{Binding ListBoxTasks}">
             <ListBox.ItemContainerStyle>
                 <Style TargetType="ListBoxItem">
                     <Setter Property="Visibility" Value="{Binding IsVisible, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+                    <Setter Property="Height" Value="Auto"/>
                 </Style>
             </ListBox.ItemContainerStyle>
             <ListBox.ItemTemplate>
@@ -35,20 +37,22 @@
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto" />
-                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
                         <CheckBox mah:CheckBoxHelper.CheckGlyphForegroundChecked="LightGreen" Grid.Column="0"  IsChecked="{Binding IsCompleted}"/>
                         <TextBlock Grid.Column="1" Text="{Binding TaskName}" Margin="5" VerticalAlignment="Center" />
-                        <TextBlock Grid.Column="2" Text="{Binding DueDate, StringFormat='yyyy-MM-dd'}" Margin="5" VerticalAlignment="Center"/>
+                        <TextBlock Grid.Column="2" Text="{Binding TaskDescription}" Margin="5" VerticalAlignment="Center"/>
+                        <TextBlock Grid.Column="3" Text="{Binding DueDate, StringFormat='yyyy-MM-dd'}" Margin="5" VerticalAlignment="Center"/>
 
-                        <Button Grid.Column="3" Margin="5" Width="30" Height="30" Command="{Binding EditCommand}">
+                        <Button Grid.Column="4" Margin="5" Width="30" Height="30" Command="{Binding EditCommand}">
                             <fa:FontAwesome Icon="Edit" Foreground="White" FontSize="18"/>
                         </Button>
 
-                        <Button Grid.Column="4" Margin="5" Width="30" Height="30" Command="{Binding DeleteCommand}">
+                        <Button Grid.Column="5" Margin="5" Width="30" Height="30" Command="{Binding DeleteCommand}">
                             <fa:FontAwesome Icon="Trash" Foreground="White" FontSize="18"/>
                         </Button>
                     </Grid>
@@ -58,13 +62,13 @@
 
 
 
-        <StackPanel Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,20">
-            <Button Content="Add Task" Width="100" Margin="5" Click="AddTask_Click"/>
+        <StackPanel Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,20">
+            <Button Content="Add Task" Width="Auto" Margin="5" Click="AddTask_Click"/>
             <!--  <Button Content="Delete Task" Width="100" Margin="5" Click="DeleteTask_Click"/> -->
            <!-- <Button Content="Edit Task" Width="100" Margin="5" Click="EditTask_Click"/> -->
             <StackPanel Orientation="Horizontal" Margin="0,10">
                 <TextBlock Text="Filter:" VerticalAlignment="Center"/>
-                <ComboBox x:Name="filterComboBox" SelectedIndex="0" Width="150" Margin="5" SelectionChanged="filterComboBox_SelectionChanged">
+                <ComboBox x:Name="filterComboBox" SelectedIndex="0" Width="Auto" Margin="5" SelectionChanged="filterComboBox_SelectionChanged">
                     <ComboBoxItem Content="All Tasks"/>
                     <ComboBoxItem Content="Completed Tasks"/>
                     <ComboBoxItem Content="Uncompleted Tasks"/>

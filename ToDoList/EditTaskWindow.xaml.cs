@@ -18,6 +18,7 @@ namespace ToDoList
 
             // Populate the necessary data from the selectedTask
             textBoxTitle.Text = selectedTask.TaskName;
+            textBoxDescription.Text = selectedTask.TaskDescription;
             datePickerDueDate.SelectedDate = selectedTask.DueDate;
         }
 
@@ -35,19 +36,26 @@ namespace ToDoList
                 return;
             }
 
-            // Validate the due date input
-            if (datePickerDueDate.SelectedDate.HasValue && datePickerDueDate.SelectedDate.Value < DateTime.Today)
+            if (string.IsNullOrWhiteSpace(textBoxTitle.Text))
             {
-                MessageBox.Show("Please select a future due date.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Please enter a task description", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
+            // Validate the due date input
+            if (datePickerDueDate.SelectedDate.HasValue && datePickerDueDate.SelectedDate.Value < DateTime.Today)
+            {
+                MessageBox.Show("Please select a future or today's due date.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
             // Retrieve the updated values from the controls
             string updatedTitle = textBoxTitle.Text;
+            string updatedDescription = textBoxDescription.Text;
             DateTime? updatedDueDate = datePickerDueDate.SelectedDate;
 
             // Update the task with the new values
             selectedTask.TaskName = updatedTitle;
+            selectedTask.TaskDescription = updatedDescription;
             selectedTask.DueDate = updatedDueDate ?? DateTime.Now;
 
             // Save the changes to the task using the task data associated with the selectedTask
