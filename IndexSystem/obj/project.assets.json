@@ -49,19 +49,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\424556\\.nuget\\packages\\": {}
+    "C:\\Users\\bruni\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\424556\\Source\\Repos\\U16A2_OOP\\IndexSystem\\IndexSystem.csproj",
+      "projectUniqueName": "D:\\U16A2_OOP-1\\IndexSystem\\IndexSystem.csproj",
       "projectName": "IndexSystem",
-      "projectPath": "C:\\Users\\424556\\Source\\Repos\\U16A2_OOP\\IndexSystem\\IndexSystem.csproj",
-      "packagesPath": "C:\\Users\\424556\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\424556\\Source\\Repos\\U16A2_OOP\\IndexSystem\\obj\\",
+      "projectPath": "D:\\U16A2_OOP-1\\IndexSystem\\IndexSystem.csproj",
+      "packagesPath": "C:\\Users\\bruni\\.nuget\\packages\\",
+      "outputPath": "D:\\U16A2_OOP-1\\IndexSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\424556\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bruni\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

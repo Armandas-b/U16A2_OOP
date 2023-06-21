@@ -14,9 +14,10 @@ namespace IndexSystem
     {
         private static async Task Main(string[] args)
         {
-            string fullPath = Path.Combine("..", "..", "..", "U16A2Task2Data.csv");
-            string destinationPath = Path.Combine("..", "..", "..", "U16A2DataSorted.csv");
-
+            // string fullPath = Path.Combine("..", "..", "..", "U16A2Task2Data.csv");
+            // string destinationPath = Path.Combine("..", "..", "..", "U16A2DataSorted.csv");
+            string fullPath = ".\\U16A2Task2Data.csv";
+            string destinationPath = ".\\U16A2DataSorted.csv";
             using (var reader = new StreamReader(fullPath))
             using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
             {
